@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nenya</title>
+
+	<!-- Bootstrap CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body>
+	<div id="pageBox" class="box rounded-4 shadow">
+		<p id="timer"  class="text-secondary"><small id="timerCount">15:00</small>&nbsp;<svg title="Reset Session" id="timeReset" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+  <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+</svg></p>
+		<form id="nenyaForm" autocomplete="off">
+			<!--Form identification for server.-->
+			<input type="hidden" name="formId" value="nenya">
+
+			<!--Page One -->
+			<div id="pageOne" class="formBox formBoxOne">
+				<h1 class="display-4">Hello, Let's start with your name...</h1>
+				<div class="mb-3">
+				<label class="form-label">First Name*</label>
+				<input name="firstName" type="text" class="form-control" id="nenyaFormFirstName" />
+				<div class="form-text">Given first name.</div>
+				</div>
+				<div class="mb-3">
+				<label class="form-label">Surname*</label>
+				<input name="lastName" type="text" class="form-control" id="nenyaFormLastName" />
+				<div class="form-text">Make sure it maches your passport or personal ID.</div>
+				</div>
+			</div>
+
+			<!-- Page Two -->
+			  <div id="pageTwo" class="formBox formBoxTwo">
+			  <h1 class="display-4">Great, now the address...</h1>
+			  	<div class="mb-3">
+				    <label class="form-label">Address Line 1*</label>
+				    <input name="addressLineOne" type="text" class="form-control" id="nenyaFormLineOne" />
+				    <div class="form-text">House number and street name.</div>
+				</div>
+				<div class="mb-3">
+				    <label class="form-label">Address Line 2</label>
+				    <input name="addressLineTwo" type="text" class="form-control" id="nenyaFormLineTwo" />
+				    <div class="form-text">Optional</div>
+				</div>
+				<div class="mb-3">
+				    <label class="form-label">City*</label>
+				    <input name="city" type="text" class="form-control" id="nenyaFormCity" />
+				</div>
+				<div class="mb-3">
+				    <label class="form-label">Postcode*</label>
+				    <input name="postcode" type="text" class="form-control" id="nenyaFormPostcode" />
+				    <div id="nenyaFormPostcodeHelpText" class="form-text">United Kingdom postcode only.</div>
+				</div>
+			  </div>
+
+			<!--Page Three-->
+			<div id="pageThree" class="formBox formBoxThree">
+				<h1 class="display-4">How do we contact you?</h1>
+				<div class="mb-3">
+				<label class="form-label">Telephone Number*</label>
+				<input name="phone" type="text" class="form-control" id="nenyaFormTel" />
+				<div id="nenyaFormPhoneHelpText" class="form-text">Full telephone number, mobile or landline.</div>
+				</div>
+				<div class="mb-3">
+				<label class="form-label">Email*</label>
+				<input name="email" type="text" class="form-control" id="nenyaFormEmail" />
+				<div id="nenyaFormEmailHelpText" class="form-text">The one you check daily.</div>
+				</div>
+			</div>
+
+			<!--Page Four-->
+			<div id="pageFour" class="formBox formBoxFour">
+				<h1 class="display-4">Final check.</h1>
+				<div id="userData"></div>
+				
+			</div>
+
+			<!--Page Five-->
+			<div id="pageFive" class="formBox formBoxFive">
+				<div id="pageFive"></div>
+			</div>
+			<button id="nenyaFormBack" type="button" class="btn btn-primary">Back</button>
+			<button id="nenyaFormNextOne" type="submit" class="btn btn-primary">Next</button>
+		</form>
+		<footer>
+  			<p class="text-secondary text-center"><small>For demonstration purposes only. No data will be collected.</small></p>
+  		</footer>
+	</div>
+
+<!--Vanilla JS -->
+<script type="text/javascript" src="script.js"></script>
+
+<!-- Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>

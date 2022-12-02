@@ -1,0 +1,108 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #52527a; }
+
+.box {
+  width: 90%;
+  overflow: hidden;
+  margin: 50px auto;
+  background: #fff;
+  -webkit-transition: height 0.25s ease-in;
+  transition: height 0.25s ease-in; }
+  .box p, .box h1, .box h2 {
+    padding: 0 0 30px 0; }
+  .box h1 {
+    margin-left: 0;
+    padding-left: 0; }
+  .box form .formBox {
+    width: 80%;
+    margin: 0 auto 30px auto; }
+
+#timer {
+  margin: 10px; }
+
+.alert {
+  margin: 20px; }
+
+#timeReset {
+  transition: transform .7s ease-in-out;
+  cursor: pointer; }
+  #timeReset:hover {
+    transform: rotate(260deg); }
+
+#timer {
+  text-align: right; }
+
+/*Style disabled button*/
+.btn:disabled {
+  background-color: #808080;
+  border-color: #a6a6a6; }
+
+@media only screen and (max-width: 1200px) {
+  #nenyaFormNextOne {
+    margin-left: 20px; } }
+/*Animate pages transition*/
+/*https://stackoverflow.com/questions/40446658/javascript-add-transition-between-displaynone-and-displayblock*/
+@-webkit-keyframes in {
+  0% {
+    -webkit-transform: scale(1) rotate(0);
+    opacity: 0;
+    visibility: hidden; }
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+    opacity: 1;
+    visibility: visible; } }
+@keyframes in {
+  0% {
+    transform: scale(1) rotate(0);
+    opacity: 0;
+    visibility: hidden; }
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+    visibility: visible; } }
+@-webkit-keyframes out {
+  0% {
+    -webkit-transform: scale(1) rotate(0);
+    opacity: 1;
+    visibility: visible; }
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+    opacity: 0;
+    visibility: hidden; } }
+@keyframes out {
+  0% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+    visibility: visible; }
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 0;
+    visibility: hidden; } }
+/*Smooth transition between pages 
+.formBox{
+	-webkit-animation: in 700ms ease both;
+  animation: in 700ms ease both;
+}*/
+.show {
+  -webkit-animation: in 700ms ease both;
+  animation: in 700ms ease both; }
+
+.hide {
+  -webkit-animation: out 700ms ease both;
+  animation: out 700ms ease both; }
+
+footer {
+  margin-top: 50px; }
+
+/*TEMP*/
+#nenyaFormBack {
+  margin-left: 10%; }
+
+/*Hide elements on start*/
+.formBoxTwo, .formBoxThree, .formBoxFour, .formBoxFive {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
