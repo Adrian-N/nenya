@@ -4,7 +4,8 @@ V1.0
 ### Demo
 [https://adriannowak.net/pre-prod/nenya/](https://adriannowak.net/pre-prod/nenya/)
 
-[https://codepen.io/mr-adrian/pen/mdzxMqR](CODEPEN)
+### Codepen
+[https://codepen.io/mr-adrian/pen/mdzxMqR](https://codepen.io/mr-adrian/pen/mdzxMqR)
 
 ### Frameworks
 - Vanilla JS
